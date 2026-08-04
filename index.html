@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CleanSpaces — Профессиональная уборка в Лиссабоне</title>
-  <meta name="description" content="Профессиональная уборка квартир, домов и офисов в Лиссабоне. Почасовая уборка от 25 €/час. Высокое качество, экологичные средства.">
-  <meta name="keywords" content="уборка Лиссабон, клининг, уборка квартир, уборка офисов, генеральная уборка">
-  <link rel="canonical" href="https://cleanspaces.pt/">
-  <meta property="og:title" content="CleanSpaces — Профессиональная уборка в Лиссабоне">
-  <meta property="og:description" content="Чистота, которой вы достойны. Уборка домов и офисов.">
-  <meta property="og:url" content="https://cleanspaces.pt/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CleanSpaces — Уборка в Лиссабоне">
-  <meta name="twitter:description" content="Профессиональная уборка с гарантией качества.">
+  <meta name="description" content="Профессиональная уборка квартир, домов и офисов в Лиссабоне. Почасовая уборка от 25 €/час. Высокое качество, экологичные средства." />
+  <meta name="keywords" content="уборка Лиссабон, клининг, уборка квартир, уборка офисов, генеральная уборка" />
+  <link rel="canonical" href="https://cleanspaces.pt/" />
+  <meta property="og:title" content="CleanSpaces — Профессиональная уборка в Лиссабоне" />
+  <meta property="og:description" content="Чистота, которой вы достойны. Уборка домов и офисов." />
+  <meta property="og:url" content="https://cleanspaces.pt/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CleanSpaces — Уборка в Лиссабоне" />
+  <meta name="twitter:description" content="Профессиональная уборка с гарантией качества." />
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
     {
@@ -31,11 +31,11 @@
       "priceRange": "€25-€35"
     }
   </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧹</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧹</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     /* ===== RESET & BASE ===== */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -618,28 +618,30 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT + MAP ===== -->
+  <!-- ===== CONTACT + MAP (Web3Forms) ===== -->
   <section id="contact">
     <div class="container">
       <h2 class="section-title fade-up" data-i18n="contact_title">Свяжитесь с нами</h2>
       <p class="section-sub fade-up" data-i18n="contact_sub">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
       <div class="contact-wrapper">
         <div class="fade-up">
-          <form class="contact-form" action="https://formsubmit.co/cleanspaces100@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="Новая заявка на уборку">
-            <input type="text" name="name" placeholder="Ваше имя" required data-i18n-placeholder="form_name">
-            <input type="tel" name="phone" placeholder="Телефон" required data-i18n-placeholder="form_phone">
-            <!-- email удалён -->
-            <input type="text" name="address" placeholder="Адрес" data-i18n-placeholder="form_address">
+          <!-- Web3Forms action -->
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="25366467-41fc-452c-8edf-55e1de582720" />
+            <!-- Дополнительные настройки -->
+            <input type="hidden" name="subject" value="Новая заявка на уборку" />
+            <input type="hidden" name="from_name" value="CleanSpaces Сайт" />
+            <!-- Поля формы -->
+            <input type="text" name="name" placeholder="Ваше имя" required data-i18n-placeholder="form_name" />
+            <input type="tel" name="phone" placeholder="Телефон" required data-i18n-placeholder="form_phone" />
+            <input type="text" name="address" placeholder="Адрес" data-i18n-placeholder="form_address" />
             <select name="cleaning_type" required>
               <option value="" data-i18n="form_type_opt">Тип уборки</option>
               <option value="regular" data-i18n="form_type_reg">Обычная</option>
               <option value="deep" data-i18n="form_type_deep">Генеральная</option>
             </select>
-            <!-- Поле выбора даты (календарь) вместо дня недели -->
-            <input type="date" name="preferred_date" required data-i18n-placeholder="form_date">
-            <!-- Время начала: от 09:00 до 17:00 -->
+            <input type="date" name="preferred_date" required data-i18n-placeholder="form_date" />
             <select name="start_time" required>
               <option value="" data-i18n="form_start_time_opt">Время начала</option>
               <option value="09:00">09:00</option>
@@ -652,7 +654,6 @@
               <option value="16:00">16:00</option>
               <option value="17:00">17:00</option>
             </select>
-            <!-- Время окончания: от 10:00 до 18:00 -->
             <select name="end_time" required>
               <option value="" data-i18n="form_end_time_opt">Время окончания</option>
               <option value="10:00">10:00</option>
